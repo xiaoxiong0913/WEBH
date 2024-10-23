@@ -11,8 +11,8 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 # 加载模型和标准化器
-model_path = r"D:\WEB汇总\AMI-AF WEB\glmnet_model.pkl"
-scaler_path = r"D:\WEB汇总\AMI-AF WEB\scaler.pkl"
+model_path = "glmnet_model.pkl"
+scaler_path = "scaler.pkl"
 
 with open(model_path, 'rb') as model_file, open(scaler_path, 'rb') as scaler_file:
     model = pickle.load(model_file)
